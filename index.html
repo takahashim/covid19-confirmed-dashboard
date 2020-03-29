@@ -1,0 +1,134 @@
+<html>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8" />
+    <title>COVID-19 都道府県別陽性患者数推移一覧</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="東京都 新型コロナウイルス感染症対策サイトの派生サイトのうち、埋め込み機能が使えるサイトを利用して、各地域の陽性患者数グラフをまとめて表示しています。"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://covid19-jp-confirmed-dashboard.netlify.com/" />
+    <meta property="og:title" content="COVID-19 都道府県別陽性患者数推移一覧" />
+    <meta property="og:description" content="東京都 新型コロナウイルス感染症対策サイトの派生サイトのうち、埋め込み機能が使えるサイトを利用して、各地域の陽性患者数グラフをまとめて表示しています。" />
+    <meta property="og:site_name" content="covid19-jp-confirmed-dashboard" />
+    <meta name="twitter:card" content="summary" />
+    <style>
+      * {
+        box-sizing: border-box;
+        color: #666;
+        background-color: #fafafa;
+      }
+        header, footer {
+        margin: 0 30px;
+      }
+      header p, footer p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+      }
+      h1, h2 {
+        text-align: center;
+        font-weight: 300;
+      }
+      h2 a:visited {
+        color: #999;
+      }
+      #main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+      }
+      .pref-item {
+        margin: 10px 5px;
+        padding: 0 0;
+      }
+      .pref-card {
+        background-color: #fff;
+        display:block;
+        width: 360px;
+        min-height: 540px;
+        border: 0;
+      }
+      footer {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>COVID-19 都道府県別陽性患者数推移一覧</h1>
+        <p>
+          <a href="https://stopcovid19.metro.tokyo.lg.jp/">東京都 新型コロナウイルス感染症対策サイト</a>の派生サイトの埋め込み機能を利用して、各地域の陽性患者数グラフをまとめて表示しています。地域によって、陽性患者数の状況が大きく異なることを可視化します。<br />
+          ※全ての地域を表示するまで、かなり時間がかかる場合があります。
+        </p>
+      </header>
+      <div id="main">
+        <div class="pref-item">
+          <h2><a href="https://covid19.codeforaomori.org/">青森県</a></h2>
+          <iframe class="pref-card" src="https://covid19.codeforaomori.org/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://fukushima-covid19.firebaseapp.com/">福島県</a></h2>
+          <iframe class="pref-card" src="https://fukushima-covid19.firebaseapp.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+
+        <div class="pref-item">
+          <h2><a href="https://covid19-ibaraki.netlify.com/">茨城県</a></h2>
+          <iframe class="pref-card" src="https://covid19-ibaraki.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://stopcovid19-gunma.netlify.com/">群馬県</a></h2>
+          <iframe class="pref-card" src="https://stopcovid19-gunma.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://stopcovid19.metro.tokyo.lg.jp/">東京都</a></h2>
+          <iframe class="pref-card" src="https://stopcovid19.metro.tokyo.lg.jp/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+
+        <div class="pref-item">
+          <h2><a href="https://niigata.stopcovid19.jp/">新潟県</a></h2>
+          <iframe class="pref-card" src="https://niigata.stopcovid19.jp/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+
+        <div class="pref-item">
+          <h2><a href="https://stop-covid19-nagano.netlify.com/">長野県</a></h2>
+          <iframe class="pref-card" src="https://stop-covid19-nagano.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://stopcovid19-kyoto.netlify.com/">京都府</a></h2>
+          <iframe class="pref-card" src="https://stopcovid19-kyoto.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://covid19-hiroshima.netlify.com/">広島県</a></h2>
+          <iframe class="pref-card" src="https://covid19-hiroshima.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://covid19-yamaguchi.netlify.com/">山口県</a></h2>
+          <iframe class="pref-card" src="https://covid19-yamaguchi.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://covid19-kagawa.netlify.com/">香川県</a></h2>
+          <iframe class="pref-card" src="https://covid19-kagawa.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>      </div>
+        <div class="pref-item">
+          <h2><a href="https://stopcovid19-nagasaki.netlify.com/">長崎県</a></h2>
+          <iframe class="pref-card" src="https://stopcovid19-nagasaki.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://stop-covid19-kumamoto.netlify.com/">熊本県</a></h2>
+          <iframe class="pref-card" src="https://stop-covid19-kumamoto.netlify.com/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://oita.stopcovid19.jp/">大分県</a></h2>
+          <iframe class="pref-card" src="https://oita.stopcovid19.jp/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+        <div class="pref-item">
+          <h2><a href="https://covid19.code4kagoshima.org/">鹿児島県</a></h2>
+          <iframe class="pref-card" src="https://covid19.code4kagoshima.org/cards/number-of-confirmed-cases?embed=true"></iframe>
+        </div>
+      </div>
+      <footer>
+        <p>Thanks to: Code for Japan, other brigates and people fighting against COVID-19.</p>
+        <p>Source code: <a href="https://github.com/takahashim/covid19-jp-confirmed-dashboard">https://github.com/takahashim/covid19-jp-confirmed-dashboard</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
